@@ -226,7 +226,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.19333267
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -584,43 +584,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8fb8ccb1a084c59a86ad73efd8ee89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundImage: {fileID: 0}
+  backgroundImage: {fileID: 6049605792901559095, guid: dfc45c5624d9c184fbef44f431c3b2de, type: 3}
   playerVisuals:
     playerStartingDirection: 0
-    animController: {fileID: 0}
-    defaultSprite: {fileID: 0}
+    animController: {fileID: 9100000, guid: 05179d1246f48024d99f3eb224760c23, type: 2}
+    defaultSprite: {fileID: -8937333279313398460, guid: 25953f991537d314694de956cf698a15, type: 3}
     color: {r: 0.14117643, g: 0.29628542, b: 1, a: 1}
     spriteColorOverride: 0
     impactColor: {r: 1, g: 0, b: 0, a: 1}
   projectileVisuals:
     animController: {fileID: 0}
     sprite: {fileID: 0}
-    color: {r: 1, g: 0.8624264, b: 0, a: 1}
+    color: {r: 1, g: 0, b: 0.48368788, a: 1}
     spriteColorOverride: 0
     enableTrail: 0
   tileVisuals:
     animController: {fileID: 0}
-    sprite: {fileID: 0}
+    sprite: {fileID: -6636963309793451902, guid: 0b1074f7eea78c44b9626468ed8b6e8b, type: 3}
     color: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
     spriteColorOverride: 0
   crateVisuals:
-    animController: {fileID: 0}
-    sprite: {fileID: 0}
+    animController: {fileID: 9100000, guid: 7e322317eef231645b3fdbcec92c9643, type: 2}
+    sprite: {fileID: -427066485589525634, guid: 86504595020a6e047920792158a61ebd, type: 3}
     color: {r: 1, g: 0.540573, b: 0.23137254, a: 1}
     spriteColorOverride: 0
   trapVisuals:
-    animController: {fileID: 0}
-    sprite: {fileID: 0}
+    animController: {fileID: 9100000, guid: 22f9b50c700bf3e478dd99d22f32f042, type: 2}
+    sprite: {fileID: 2097716390295217549, guid: b579b76da08541044b162d8afda0db43, type: 3}
     color: {r: 1, g: 0, b: 0.36335707, a: 1}
     spriteColorOverride: 0
   blockVisuals:
     animController: {fileID: 0}
-    sprite: {fileID: 0}
+    sprite: {fileID: 6049605792901559095, guid: dfc45c5624d9c184fbef44f431c3b2de, type: 3}
     color: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
     spriteColorOverride: 0
   goalVisuals:
     animController: {fileID: 0}
-    sprite: {fileID: 0}
+    sprite: {fileID: 2102397441135980513, guid: 6cd20a7336609aa44a0c8d3fe54966c6, type: 3}
     color: {r: 0, g: 1, b: 0.7911868, a: 1}
     spriteColorOverride: 0
 --- !u!114 &325063153
@@ -715,7 +715,7 @@ MonoBehaviour:
   font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   titleFont: {fileID: 0}
   enableGameTitle: 1
-  gameTitle: Game Title
+  gameTitle: Frogger Jr.
   crateLabel: Crates Remaining
   stepsLabel: Steps Taken
   timerColor: {r: 0, g: 0.9803922, b: 0.6039216, a: 1}
@@ -2561,7 +2561,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 325063150}
   - {fileID: 1254882678}
   - {fileID: 989875026}
   - {fileID: 2114609472}
+  - {fileID: 325063150}

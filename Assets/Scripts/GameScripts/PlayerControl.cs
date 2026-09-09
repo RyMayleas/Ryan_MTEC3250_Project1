@@ -45,7 +45,8 @@ public class PlayerControl : MonoBehaviour
         else //ONLY IF USING PLAYER ROTATION 
         {
             //Animator code goes here for this state
-
+            animator.SetBool("Idle", false);
+            animator.SetBool("Moving", true);
         }
     }
 
@@ -55,6 +56,8 @@ public class PlayerControl : MonoBehaviour
         if (animatorController == null) return;
 
         //Code for resetting animator bools go here
+        animator.SetBool("Idle", true);
+        animator.SetBool("Moving", false);
     }
 
     private void ChangeFacingDirection(Vector3 _direction)
