@@ -594,9 +594,9 @@ MonoBehaviour:
     impactColor: {r: 1, g: 0, b: 0, a: 1}
   projectileVisuals:
     animController: {fileID: 0}
-    sprite: {fileID: 0}
+    sprite: {fileID: 7482667652216324306, guid: a5d8077974aef9a4981e02fabae76af1, type: 3}
     color: {r: 1, g: 0, b: 0.48368788, a: 1}
-    spriteColorOverride: 0
+    spriteColorOverride: 1
     enableTrail: 0
   tileVisuals:
     animController: {fileID: 0}
@@ -712,12 +712,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3f6c72e098e149bbaee9b489300a829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIProperties
-  font: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  font: {fileID: 11400000, guid: 1671447be4388004a853dbe1052db1d7, type: 2}
   titleFont: {fileID: 0}
   enableGameTitle: 1
   gameTitle: Frogger Jr.
-  crateLabel: Crates Remaining
-  stepsLabel: Steps Taken
+  crateLabel: Flies Remaining
+  stepsLabel: Leaps Taken
   timerColor: {r: 0, g: 0.9803922, b: 0.6039216, a: 1}
   titleColor: {r: 1, g: 1, b: 1, a: 1}
   textColor: {r: 1, g: 1, b: 1, a: 1}
