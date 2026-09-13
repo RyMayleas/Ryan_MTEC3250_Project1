@@ -597,7 +597,7 @@ MonoBehaviour:
     sprite: {fileID: 7482667652216324306, guid: a5d8077974aef9a4981e02fabae76af1, type: 3}
     color: {r: 1, g: 0, b: 0.48368788, a: 1}
     spriteColorOverride: 1
-    enableTrail: 0
+    enableTrail: 1
   tileVisuals:
     animController: {fileID: 0}
     sprite: {fileID: -6636963309793451902, guid: 0b1074f7eea78c44b9626468ed8b6e8b, type: 3}
