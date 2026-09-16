@@ -150,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 2811812186117793403, guid: e9074a5fed7be47ddbd9f45c85d07bc4, type: 3}
+  particleEffects: {fileID: 325063154}
 --- !u!4 &67102917
 Transform:
   m_ObjectHideFlags: 0
@@ -556,21 +557,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4704adf934ddd4db0a2e8a48cec0266d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
+  music: {fileID: 8300000, guid: 0f6c8083529fc314e819bf8afe9da5bb, type: 3}
   musicVolume: 1
   ambience: {fileID: 0}
   ambienceVolume: 1
-  playerMove: {fileID: 0}
+  playerMove: {fileID: 8300000, guid: d5f17a6e258b0f24ea3ea37ceba59a2b, type: 3}
   playerMoveVolume: 1
-  fireProjectile: {fileID: 0}
+  fireProjectile: {fileID: 8300000, guid: 64ebf84daecd86849a55f1bac7e34d99, type: 3}
   fireProjectileVolume: 1
   projectileImpact: {fileID: 0}
   projectileImpactVolume: 1
-  crateDestroyed: {fileID: 0}
+  crateDestroyed: {fileID: 8300000, guid: 2258530462fb02d45aa0e9bd624960c6, type: 3}
   crateDestroyedVolume: 1
-  enterTrap: {fileID: 0}
+  enterTrap: {fileID: 8300000, guid: 1bf4937d4da5f5949a5bb85aad763cc5, type: 3}
   enterTrapVolume: 1
-  goalReached: {fileID: 0}
+  goalReached: {fileID: 8300000, guid: b352fd6723575564883703e6fbd44e56, type: 3}
   goalReachedVolume: 1
 --- !u!114 &325063152
 MonoBehaviour:
@@ -688,9 +689,9 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  crateDestroyedParticles: {fileID: 0}
-  crateParticleCountMin: 0
-  crateParticleCountMax: 0
+  crateDestroyedParticles: {fileID: 1561501017}
+  crateParticleCountMin: 10
+  crateParticleCountMax: 10
   projectileFireParticles: {fileID: 0}
   projectileFireParticleCountMin: 0
   projectileFireParticleCountMax: 0
@@ -715,7 +716,7 @@ MonoBehaviour:
   font: {fileID: 11400000, guid: 1671447be4388004a853dbe1052db1d7, type: 2}
   titleFont: {fileID: 0}
   enableGameTitle: 1
-  gameTitle: Frogger Jr.
+  gameTitle: Junior Froggy
   crateLabel: Flies Remaining
   stepsLabel: Leaps Taken
   timerColor: {r: 0, g: 0.9803922, b: 0.6039216, a: 1}
@@ -726,6 +727,91 @@ MonoBehaviour:
   backPanelColor: {r: 0.509434, g: 0.509434, b: 0.509434, a: 0.7019608}
   backPanelImage: {fileID: 0}
   spriteColorOverride: 0
+--- !u!1001 &329784234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 561690384848764225, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_Name
+      value: Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429165038059432777, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: ShapeModule.type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429165038059432777, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: ShapeModule.angle
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429165038059432777, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: ShapeModule.arc.value
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429165038059432777, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: ShapeModule.m_Rotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429165038059432777, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429165038059432777, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6373649405777588873, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c805e20afe1b5504a82c4e3a26f34da4, type: 2}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06385
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7345
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8335998662399971418, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
 --- !u!1 &488166816
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,6 +2366,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502172363}
   m_CullTransparentMesh: 1
+--- !u!198 &1561501017 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5429165038059432777, guid: a6c33c346fcf60a468d0b7d9eed1670d, type: 3}
+  m_PrefabInstance: {fileID: 329784234}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1770704612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,3 +2656,4 @@ SceneRoots:
   - {fileID: 989875026}
   - {fileID: 2114609472}
   - {fileID: 325063150}
+  - {fileID: 329784234}

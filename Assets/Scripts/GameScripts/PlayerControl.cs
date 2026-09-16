@@ -170,6 +170,8 @@ public class PlayerControl : MonoBehaviour
 
     public static event Action<Vector3> ProjectileFired;
 
+    public Effects particleEffects;
+
 
     private void Start()
     {
@@ -251,21 +253,25 @@ public class PlayerControl : MonoBehaviour
             {
                 MovementAnimationControl(Vector3.right);
                 SetTargetTile(Vector3.right);
+                particleEffects.SetDirection("Right");
             }
             else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 MovementAnimationControl(Vector3.left);
                 SetTargetTile(Vector3.left);
+                particleEffects.SetDirection("Left");
             }
             else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 MovementAnimationControl(Vector3.up);
                 SetTargetTile(Vector3.up);
+                particleEffects.SetDirection("Up");
             }
             else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) 
             {
                 MovementAnimationControl(Vector3.down);
                 SetTargetTile(Vector3.down);
+                particleEffects.SetDirection("Down");
             }
 
             if (Input.GetKeyDown(fireKey))

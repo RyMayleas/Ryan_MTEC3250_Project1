@@ -161,6 +161,12 @@ public class Tile : MonoBehaviour
                 DestroyCrate();
             } else if (isInaccessible)
             {
+                //AudioManager.inst.PlaySound(projectileImpact, Sounds.inst.projectileImpactVolume);
+                //ProjectileHit?.Invoke(collision.transform.position);
+                //Destroy(collision.gameObject);
+            }
+            else if (isTrap)
+            {
                 AudioManager.inst.PlaySound(projectileImpact, Sounds.inst.projectileImpactVolume);
                 ProjectileHit?.Invoke(collision.transform.position);
                 Destroy(collision.gameObject);

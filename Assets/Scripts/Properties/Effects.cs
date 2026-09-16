@@ -27,6 +27,8 @@ public class Effects : MonoBehaviour
 
     private List<Vector3> playerTilePath = new List<Vector3>();
 
+    string direction;
+
 
     private void OnEnable()
     {
@@ -65,13 +67,16 @@ public class Effects : MonoBehaviour
 
     }
 
+    public void SetDirection(string dir)
+    {
+        direction = dir;
+    }
+
     private void TriggerProjectileFire(Vector3 pos)
     {
         if (projectileFireParticles == null) return;
 
         projectileFireParticles.transform.position = pos;
-
-
         if (projectileFireParticleCountMax > projectileFireParticleCountMin)
         {
             projectileFireParticles.Emit(Random.Range(projectileFireParticleCountMin, projectileFireParticleCountMax));
@@ -90,8 +95,17 @@ public class Effects : MonoBehaviour
     {
         if (crateDestroyedParticles == null) return;
 
-        crateDestroyedParticles.transform.position = tile.transform.position;
-
+        //crateDestroyedParticles.transform.position = tile.transform.position;
+        crateDestroyedParticles.transform.position = player.transform.position;
+        var sh = crateDestroyedParticles.shape;
+        if (direction == "Right")
+            sh.rotation = new Vector3(0, 90, 0);
+        if (direction == "Down")
+            sh.rotation = new Vector3(0, 180, 0);
+        if (direction == "Left")
+            sh.rotation = new Vector3(0, 270, 0);
+        if (direction == "Up")
+            sh.rotation = new Vector3(0, 0, 0);
         if (crateParticleCountMax > crateParticleCountMin)
         {
             crateDestroyedParticles.Emit(Random.Range(crateParticleCountMin, crateParticleCountMax));
