@@ -562,15 +562,15 @@ MonoBehaviour:
   ambience: {fileID: 0}
   ambienceVolume: 1
   playerMove: {fileID: 8300000, guid: d5f17a6e258b0f24ea3ea37ceba59a2b, type: 3}
-  playerMoveVolume: 1
+  playerMoveVolume: 0.5
   fireProjectile: {fileID: 8300000, guid: 64ebf84daecd86849a55f1bac7e34d99, type: 3}
-  fireProjectileVolume: 1
+  fireProjectileVolume: 0.5
   projectileImpact: {fileID: 0}
-  projectileImpactVolume: 1
+  projectileImpactVolume: 0.5
   crateDestroyed: {fileID: 8300000, guid: 2258530462fb02d45aa0e9bd624960c6, type: 3}
-  crateDestroyedVolume: 1
+  crateDestroyedVolume: 0.5
   enterTrap: {fileID: 8300000, guid: 1bf4937d4da5f5949a5bb85aad763cc5, type: 3}
-  enterTrapVolume: 1
+  enterTrapVolume: 0.5
   goalReached: {fileID: 8300000, guid: b352fd6723575564883703e6fbd44e56, type: 3}
   goalReachedVolume: 1
 --- !u!114 &325063152
