@@ -605,8 +605,8 @@ MonoBehaviour:
     color: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
     spriteColorOverride: 0
   crateVisuals:
-    animController: {fileID: 9100000, guid: 7e322317eef231645b3fdbcec92c9643, type: 2}
-    sprite: {fileID: -427066485589525634, guid: 86504595020a6e047920792158a61ebd, type: 3}
+    animController: {fileID: 9100000, guid: 3e3ddcb8303ec0b4da886230c11c0b4b, type: 2}
+    sprite: {fileID: 3371815536797807117, guid: e6fe43e387c4c8b4c9883b6661305d5e, type: 3}
     color: {r: 1, g: 0.540573, b: 0.23137254, a: 1}
     spriteColorOverride: 0
   trapVisuals:
